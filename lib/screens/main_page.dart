@@ -14,24 +14,18 @@ class MainPage extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.white,
           elevation: 0,
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              const CircleAvatar(
-                radius: 15,
-                backgroundImage: AssetImage('assets/images/profile.png'),
-              ),
-              const SizedBox(width: 10),
-              Text(
-                name,
-                style: const TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
-                  fontFamily: 'Gilroy',
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ],
+          leading: const CircleAvatar(
+            radius: 15,
+            backgroundImage: AssetImage('assets/images/profile.png'),
+          ),
+          title: Text(
+            name,
+            style: const TextStyle(
+              color: Colors.black,
+              fontSize: 15,
+              fontFamily: 'Gilroy',
+              fontWeight: FontWeight.w600,
+            ),
           ),
           actions: [
             IconButton(
