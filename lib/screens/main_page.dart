@@ -44,9 +44,6 @@ class MainPage extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             children: [
-              // SizedBox(
-              //   height: MediaQuery.of(context).size.height * 0.1,
-              // ),
               Row(
                 children: [
                   SizedBox(
@@ -183,7 +180,7 @@ class MainPage extends StatelessWidget {
                           height: 20,
                         ),
                         SizedBox(
-                          height: MediaQuery.of(context).size.height * 0.43,
+                          height: MediaQuery.of(context).size.height * 0.5,
                           child: ListView.builder(
                               scrollDirection: Axis.horizontal,
                               itemCount: 5,
